@@ -28,8 +28,10 @@ This project demonstrates how to fine-tune a lightweight embedding model that ca
 You can upload these files through the Colab file browser or use the following code at the beginning of your notebook:
 
 ```python
-from google.colab import files
-uploaded = files.upload()  # This will prompt you to upload the required files
+!mkdir -p data
+!wget -O data/sentence_pairs.jsonl https://raw.githubusercontent.com/mateon01/class2025Spring-mid-term/main/data/sentence_pairs.jsonl
+!wget -O data/external_data.jsonl https://raw.githubusercontent.com/mateon01/class2025Spring-mid-term/main/data/external_data.jsonl
+!wget -O data/combined_data.jsonl https://raw.githubusercontent.com/mateon01/class2025Spring-mid-term/main/data/combined_data.jsonl
 ```
 
 ## How to Run
