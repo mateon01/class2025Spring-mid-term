@@ -15,6 +15,7 @@
 - PyTorch
 - Transformers
 - Sentence-Transformers
+- Weights & Biases (wandb) 계정 및 API 키
 - 노트북에 나열된 기타 종속성
 
 ## Google Colab 사용자를 위한 중요 안내
@@ -34,4 +35,5 @@ uploaded = files.upload()  # 필요한 파일을 업로드하라는 메시지가
 ## 실행 방법
 1. Google Colab에서 `fine_tun_embedding.ipynb` 노트북을 엽니다
 2. 위에서 언급한 대로 필요한 데이터 파일을 업로드합니다
-3. 노트북의 모든 셀을 실행하여 임베딩 모델을 학습하고 평가합니다
+3. 임베딩 모델 미세 조정 단계에서 Weights & Biases(wandb.ai)의 API 키가 필요합니다. wandb 계정이 없다면 가입하고 API 키를 발급받아야 합니다.
+4. 노트북의 모든 셀을 실행하여 임베딩 모델을 학습하고 평가합니다
