@@ -15,6 +15,7 @@ This project demonstrates how to fine-tune a lightweight embedding model that ca
 - PyTorch
 - Transformers
 - Sentence-Transformers
+- Weights & Biases (wandb) account and API key
 - Other dependencies listed in the notebook
 
 ## Important Note for Google Colab Users
@@ -34,4 +35,5 @@ uploaded = files.upload()  # This will prompt you to upload the required files
 ## How to Run
 1. Open the `fine_tun_embedding.ipynb` notebook in Google Colab
 2. Upload the required data files as mentioned above
-3. Run all cells in the notebook to train and evaluate the embedding model
+3. During the embedding model fine-tuning step, you will need an API key from Weights & Biases (wandb.ai). If you don't have a wandb account, you'll need to sign up and obtain an API key.
+4. Run all cells in the notebook to train and evaluate the embedding model
