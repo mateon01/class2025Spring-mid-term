@@ -28,8 +28,10 @@
 Colab 파일 브라우저를 통해 이 파일들을 업로드하거나, 노트북 시작 부분에 다음 코드를 사용할 수 있습니다:
 
 ```python
-from google.colab import files
-uploaded = files.upload()  # 필요한 파일을 업로드하라는 메시지가 표시됩니다
+!mkdir -p data
+!wget -O data/sentence_pairs.jsonl https://raw.githubusercontent.com/mateon01/class2025Spring-mid-term/main/data/sentence_pairs.jsonl
+!wget -O data/external_data.jsonl https://raw.githubusercontent.com/mateon01/class2025Spring-mid-term/main/data/external_data.jsonl
+!wget -O data/combined_data.jsonl https://raw.githubusercontent.com/mateon01/class2025Spring-mid-term/main/data/combined_data.jsonl
 ```
 
 ## 실행 방법
